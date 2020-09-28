@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  <link href="../styles/battleground.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="bannerSection">
+    <div class="bannerWrapper">
+      <a href="index.html">
+        <h2>Home</h2>
+      </a>
+      <h1>Brutal Battleground</h1>
+    </div>
+  </div>
+
+  <!--This section holds the hero and action cards-->
+  <div class="heroSection">
+    <div class="heroWrapper">
+      <div class="heroCard">
+        <a href="#" onclick="Main.mouseClickDesc()">
+          <div class="hero">
+            <img src="../img/dutch.png">
+            <h3>Dutch</h3>
+            <p>Health (HP): 19</p>
+            <p>Strength (STR): 13</p>
+            <p>Speed (SPD): 9</p>
+            <div id="weapon">
+              <p>Weapon: None</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="actionCard1">
+        <a href="#" onclick="Main.refreshActionCard(1)">
+          <div class="placeHolder">
+            <h2>Draw Card</h2>
+          </div>
+        </a>
+      </div>
+
+      <div class="actionCard2">
+        <a href="#" onclick="Main.refreshActionCard(2)">
+          <div class="placeHolder">
+            <h2>Draw Card</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!--This section holds the action buttons-->
+  <br>
+  <div class="buttonSection">
+    <div class="buttonWrapper">
+      <a href="#" onclick="Main.attackButton()">Attack</a>
+      <a href="#" onclick="Main.playCard(1)">Play Card</a>
+      <a href="#" onclick="Main.playCard(2)">Play Card</a>
+    </div>
+  </div>
+
+  <!--This section holds the enemy cards-->
+  <div class="enemySection">
+    <div class="enemyWrapper">
+      <div class="tallyCard">
+        <h3>Kill Count: </h3>
+        <h4>0</h4>
+        <!--<h3>Kill Target: </h3>
+                          <h4>7</h4>-->
+      </div>
+
+      <div class="enemyCard">
+        <a href="#" onclick="Main.revealEnemyCard()">Reveal Enemy</a>
+      </div>
+
+      <div class="emptyCard">
+        <h3>Kill List</h3>
+        <p id="emptyID"></p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <p>Copyright © 2020 AngryAustrian Enterprises</p>
+  </footer>
+</body>
+</html>

@@ -1,6 +1,6 @@
-* {
+/* * {
     background-color: #222;
-}
+} */
 @font-face {
     font-family: 'Oswald';
     src: url('fonts/Oswald-VariableFont_wght.ttf')
@@ -9,129 +9,117 @@
 body {
     margin: 0px;
     padding: 0px;
+    width: 100%;
+    background-color: #222;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-family: 'Black Ops One', cursive;
     font-weight: lighter;
-    color: rgb(67, 90, 60);
     text-align: center;
-}
-
-.wholePage {
     margin: 0px;
-    padding: 0px;
-    width: 100%;
-    display: inline-block;
+    white-space: nowrap;
 }
 
-.bannerSection {
+/* .bannerSection {
     margin: 0px;
     padding: 0px;
     text-align: center;
     height: 70px;
     width: 100%;
-}
+} */
 
-.bannerWrapper {
+#page_header {
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
     background-color: rgb(67, 90, 60);
     height: 70px;
     width: 100%;
-}
-
-.bannerWrapper a {
-    float: left;
-    text-decoration: none;
-    height: 70px;
-    width: 110px;
-    background-color: rgb(35, 46, 32);
-    color: rgb(67, 90, 60);
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    padding: 0px;
-    margin: 0px;
     text-align: center;
-    display: none;
-}
-
-.bannerWrapper a:hover {
-    background-color: rgb(110, 148, 101);
-    color: rgb(35, 46, 32);
-}
-
-.bannerWrapper h1 {
-    margin: 0px;
-    padding-top: 5px;
-    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-family: 'Black Ops One', cursive;
     font-weight: lighter;
-    font-size: 50px;
-    background-color: inherit;
-    width: inherit;
-    color: black;
-}
-
-.bannerWrapper h2 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: lighter;
-    background-color: transparent;
-    display: none;
+    font-size: 2rem;
 }
 
 /* This defines the horizontal wrapper for the Intro*/
-.introSection {
-    margin-top: 20px;
-    width: 100%;
+#welcome_section {
+    margin: 20px 15%;
     display: inline-flex;
     justify-content: center;
-}
-
-.introWrapper {
-    display: inline-flex;
-    flex-direction: row;
     background-color: #555;
-    margin: 0px;
     padding: 0px;
-    height: 180px;
-    width: 720px;
+    max-height: 20rem;
+    /* width: 80%; */
+    min-width: 840px;
     border: solid 5px black;
     border-radius: 20px;
+    overflow: hidden;
 }
 
-.introWrapper img {
-    width: 320px;
-    border-radius: 15px 0px 0px 15px;
+#welcome_section img {
+    height: 100%;
 }
 
-.introWrapper p {
+#welcome_text {
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#welcome_text p {
     text-align: justify;
-    align-items: center;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 200;
-    font-size: 18px;
-    color: #222;
+    font-family: 'Iceberg', Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: black;
     background-color: #555;
-    width: 90%;
-    height: 180px;
+    min-width: 50%;
+    max-height: 10rem;
     margin: 0px;
-    padding: 0px 20px 0px 20px;
-    border-radius: 0px 15px 15px 0px;
+}
+
+/* Styling for the 'START' button */
+#start {
+    height: 6rem;
+    width: 6rem;
+    border: 1px solid darkred;
+    background: radial-gradient(red, darkred);
+    border-radius: 4rem;
+    color: #000000a6;
+    font-size: 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    box-shadow: 0px 0px 3px;
+    text-transform: uppercase;
+}
+
+#start:hover {
+    background: radial-gradient(rgb(253, 168, 88), red);
+}
+
+#start:focus {
+    background: radial-gradient(rgb(253, 168, 88), red);
+    outline: none;
+}
+
+#start:active {
+    background: radial-gradient(rgb(253, 168, 88), red);
+    box-shadow: #ffff008a 0px 0px 13px;
 }
 
 /* This defines the horizontal wrapper for the buttons*/
-.buttonSection {
-    margin: 20px 0px 0px 0px;
+#buttonSection {
+    /* margin: 20px 0px 0px; */
     padding: 0px;
     width: 100%;
     display: inline-flex;
     justify-content: center;
 }
 
-.buttonSection a {
+#buttonSection a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -147,7 +135,7 @@ h1 {
     border: solid 2px black;
 }
 
-.buttonSection a:hover {
+#buttonSection a:hover {
     background-color: rgb(35, 46, 32);
     color: rgb(67, 90, 60);
     border-color: rgb(67, 90, 60);
@@ -676,7 +664,7 @@ h1 {
 }
 
 
-.footer {
+footer {
     color: #555;
     position: absolute;
     bottom: 0;
