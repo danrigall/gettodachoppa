@@ -176,7 +176,6 @@ let Main = {
         alert(player.DESC);
     },
     actionCardClick: function(cardOption) {
-
         //Checks what the card type is and displays a different set of stats depending on what it is
         if (cardCount >= cardLimit) {
             alert('You cannot play more than two cards per round.');
