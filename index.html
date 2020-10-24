@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Get to Da Choppa!</title>
-        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Iceberg&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-        <link id="style" rel="stylesheet" href="./styles/index.css">
-        <script src="./js/index.js"></script>
-        <script src="./js/player.js"></script>
-        <script src="./js/enemy.js"></script>
-        <script src="./js/cards.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get to Da Choppa!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Iceberg&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+    <link id="style" rel="stylesheet" href="./styles/index.css">
+    <script src="./js/index.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/enemy.js"></script>
+    <script src="./js/cards.js"></script>
 </head>
+
 <body class="wholePage">
     <header id="page_header">
         <h1>Get to Da Choppa!</h1>
@@ -23,76 +24,54 @@
         <p>Welcome, men and women to the most brutal battle game of all time! If you think you are man or woman enough to face the most villainous super-villains of the 1980s and -90s, click one of the buttons below.</p>
     </section>
 
-    <!-- This section holds the modal box buttons-->
-    <div id="buttonSection">
-        <a href="#rulesButton">Da Game</a>
-        <a href="#heroButton">Da Heroes</a>
-        <a href="#legalButton">Da Legal</a>
-        <a href="#makerButton">Da Makers</a>
-    </div>
-
-    <!-- This section holds the contents of the modal boxes-->
-    <section id="rulesButton" class="modal_parent">
-        <div class="modal">
-            <h1>Da Game</h1>
-            <p>As one of the most unforgettable heroes of all time, you will battle the most heinous villains the world has ever known. Will you crush their throats with your bare hands? Or will you run screaming from their army of loyal minions? The choice is yours.</p>
-            <div id="releaseNotesButton">
+    <section id="rules">
+        <h1>Da Game</h1>
+        <p>As one of the most unforgettable heroes of all time, you will battle the most heinous villains the world has ever known. Will you crush their throats with your bare hands? Or will you run screaming from their army of loyal minions? The choice is yours.</p>
+        <div id="releaseNotesButton">
             <a href="#releaseNotes">Release Notes</a>
             <a href="#futureFeatures">Future Features</a>
-            </div>
-            <a href="#close">Close</a>
         </div>
+        <a href="#close">Close</a>
     </section>
 
-    <section id="heroButton" class="modal_parent">
-        <div class="modal">
-            <div class="heroIntro">
-                <h1>Da Heroes</h1>
-                <p>Which one of these most manly of non-girly men will you choose?</p>
-            </div>
-            <div id="cardWrapper">
-            </div>
-            <a href="#close" class="closeButton">Close</a>
+    <section id="heroes">
+        <div class="heroIntro">
+            <h1>Da Heroes</h1>
+            <p>Which one of these most manly of non-girly men will you choose?</p>
         </div>
+        <div id="cardWrapper"></div>
+        <a href="#close" class="closeButton">Close</a>
     </section>
 
-    <section id="legalButton" class="modal_parent">
-        <div class="modal">
-            <h1>Da Legal</h1>
-            <p>This game is in no way affiliated with or sanctioned by the Honorable Arnold Schwarzenegger (may he live forever, etc.), 20th Century Fox, Paramount Pictures, or any other corporate entity I may forgotten. It is intended as an homage to my favorite action star of all time and the movies I grew up watching that still today provide some of the most memorable quotes.</p>
-            <a href="#close">Close</a>
-        </div>
+    <section id="legal">
+        <h1>Da Legal</h1>
+        <p>This game is in no way affiliated with or sanctioned by the Honorable Arnold Schwarzenegger (may he live forever, etc.), 20th Century Fox, Paramount Pictures, or any other corporate entity I may forgotten. It is intended as an homage to my favorite action star of all time and the movies I grew up watching that still today provide some of the most memorable quotes.</p>
+        <a href="#close">Close</a>
     </section>
 
-    <section id="makerButton" class="modal_parent">
-        <div class="modal">
-            <h1>Da Maker</h1>
-            <img src="./img/headshot.png" alt="photo of Gabe">
-            <p>Gabe Rigall is an independent programmer/web developer/data analyst/machine learning enthusiast/evil genius who grew up watching Arnold Schwarzenegger movies and playing card, board, and videogames. The inspiration for "Get to Da Choppa" came after a particularly riveting bout of "Marrying Mr. Darcy" wherein his wife soundly beat him to the punch (pun intended).</p>
-            <a href="#close">Close</a>
-        </div>
+    <section id="maker">
+        <h1>Da Maker</h1>
+        <img src="./img/headshot.png" alt="photo of Gabe">
+        <p>Gabe Rigall is an independent programmer/web developer/data analyst/machine learning enthusiast/evil genius who grew up watching Arnold Schwarzenegger movies and playing card, board, and videogames. The inspiration for "Get to Da Choppa" came after a particularly riveting bout of "Marrying Mr. Darcy" wherein his wife soundly beat him to the punch (pun intended).</p>
+        <a href="#close">Close</a>
     </section>
 
-    <section id="releaseNotes" class="modal_parent">
-        <div class="modal">
-            <h1>Release Notes</h1>
-            <h2>Version 1.0</h2>
-            <p>This version is modeled after the physical card game and, as such, is currently bare bones. There are many more features planned but in the meantime, please enjoy!</p>
-            <a href="#rulesButton">Close</a>
-        </div>
+    <section id="release">
+        <h1>Release Notes</h1>
+        <h2>Version 1.0</h2>
+        <p>This version is modeled after the physical card game and, as such, is currently bare bones. There are many more features planned but in the meantime, please enjoy!</p>
+        <a href="#rulesButton">Close</a>
     </section>
 
-    <section id="futureFeatures" class="modal_parent">
-        <div class="modal">
-            <h1>Future Features</h1>
-            <h2>Here are some cool features I plan to put in.</h2>
-            <ul>
-                <li>More Weapons!</li>
-                <li>Trusty Sidekicks!</li>
-                <li>Environments!</li>
-            </ul>
-            <a href="#rulesButton">Close</a>
-        </div>
+    <section id="future">
+        <h1>Future Features</h1>
+        <h2>Here are some cool features I plan to put in.</h2>
+        <ul>
+            <li>More Weapons!</li>
+            <li>Trusty Sidekicks!</li>
+            <li>Environments!</li>
+        </ul>
+        <a href="#rulesButton">Close</a>
     </section>
 
     <footer id="page_footer">
