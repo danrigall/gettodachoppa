@@ -14,12 +14,33 @@ h1 {
     font-weight: lighter;
 }
 
+h2 {
+    text-align: center;
+    color: #999;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    width: 100%;
+}
+
 body {
     width: 100%;
     background-color: #222;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+main {
+    background-color: gray;
+    background: url("../img/camo_desat2.png") repeat center fixed;
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+main section {
+    min-height: 200px;
+    border: 1px solid;
 }
 
 #page_header {
@@ -66,8 +87,159 @@ body {
     font-size: 1.5rem;
 }
 
+/* 'Rules' section styling */
+
+#rules {
+    padding: 10px;
+}
+
+#notes_section {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.notes {
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    margin: 10px;
+}
+
+.notes a {
+    margin: 10px 40%;
+    padding: 4px 15px;
+    text-decoration: none;
+    color: #222;
+    background-color: darkgray;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#future ul {
+    margin: 10px;
+    color: rgb(195 69 69);
+    text-shadow: 0px 0px 1px black;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* Heroes section */
+#heroes {
+    background: lightgray;
+}
+
+#cardwrapper div {
+    padding: 0px;
+}
+
+#heroButton:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.heroIntro {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+#cardWrapper {
+    margin: 0rem;
+    padding: 0rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: scroll;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    height: relative;
+    width: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.heroWrapper {
+    min-width: 21rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: grey;
+}
+
+.heroWrapper a {
+    margin: 0rem;
+    padding: 0rem;
+    text-decoration: none;
+}
+
+.heroWrapper a:hover {
+    opacity: 0.5;
+}
+
+.hero {
+    padding: 0rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h3 {
+    font-family: 'Roboto condensed';
+    font-weight: 700;
+    font-size: 1rem;
+    color: black;
+    text-align: center;
+    padding: 0.2rem 0rem;
+    background-color: #777;
+    border-right: solid 0.1rem whitesmoke;
+    width: 100%;
+}
+
+.hero img {
+    margin: 0rem;
+    padding: 0rem;
+    min-height: 6rem;
+    width: 100%;
+}
+
+.hero p {
+    font-family: 'Roboto condensed';
+    font-size: 1rem;
+    min-height: 4rem;
+    border-right: solid 0.1rem whitesmoke;
+}
+
+.closeButton {
+    margin: 1rem 0rem 1rem 0rem;
+    padding: 0rem 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling for the "Maker" section */
+#maker img {
+    margin: 0px;
+    padding: 0px;
+    width: 360px;
+    height: relative;
+    border: 1px solid black;
+}
+
 /* This defines the horizontal wrapper for the buttons*/
-#buttonSection {
+
+/* #buttonSection {
     margin: 2rem 0rem;
     width: 100%;
     display: flex;
@@ -96,7 +268,7 @@ body {
     background-color: rgb(35, 46, 32);
     color: rgb(67, 90, 60);
     border-color: rgb(67, 90, 60);
-}
+} */
 
 #page_footer {
     color: #555;
@@ -132,12 +304,12 @@ body {
         font-size: 18px;
     }
 
-    #buttonSection a {
+    /* #buttonSection a {
         width: 5rem;
         height: 5rem;
         font-size: 1.2rem;
         margin: 10px 22px;
-    }
+    } */
 
     #page_footer {
         position: relative;
